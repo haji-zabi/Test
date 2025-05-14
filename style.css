@@ -1,56 +1,67 @@
 
-@font-face {
-  font-family: 'Lateef';
-  src: url('https://cdn.jsdelivr.net/gh/rastikerdar/lateef-font/dist/Lateef-Regular.woff2') format('woff2');
-}
 body {
-  margin: 0;
-  font-family: 'Lateef', serif;
-  background-color: #f2f2f2;
-  color: #333;
+    font-family: 'Tahoma', sans-serif;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    background-color: #f9f9f9;
+    color: #222;
+    font-size: 14px;
 }
 header {
-  background-color: #003366;
-  color: white;
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-header img {
-  height: 70px;
+    background-color: #004085;
+    color: white;
+    padding: 10px;
+    position: relative;
+    text-align: center;
 }
 header h1 {
-  flex: 1;
-  text-align: center;
-  font-size: 24px;
-  line-height: 1.8;
+    margin: 10px 0;
+    font-size: 18px;
+    line-height: 1.6;
 }
-nav {
-  background-color: #005599;
-  padding: 10px;
-  text-align: center;
+.logo {
+    width: 60px;
+    height: auto;
+    position: absolute;
+    top: 10px;
 }
-nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 10px;
-  font-size: 18px;
+.logo.right {
+    right: 10px;
 }
-nav a:hover {
-  text-decoration: underline;
+.logo.left {
+    left: 10px;
+}
+.menu-toggle {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 22px;
+    cursor: pointer;
+    display: block;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+nav ul li {
+    margin: 5px 0;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+.hidden {
+    display: none;
 }
 main {
-  padding: 20px;
+    padding: 20px;
 }
-.docs ul {
-  list-style-type: none;
-  padding: 0;
-}
-.docs li {
-  background: white;
-  margin-bottom: 10px;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }

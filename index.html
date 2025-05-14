@@ -1,33 +1,45 @@
+
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>صفحه اصلی</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ریاست عمومی پولیس ترافیک</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <img src="logo-right.png" alt="لوگو راست">
-    <h1>
-      امارت اسلامی افغانستان<br>
-      وزارت امور داخله<br>
-      معینیت ارشد امور امنیتی<br>
-      ریاست عمومی پولیس ترافیک
-    </h1>
-    <img src="logo-left.png" alt="لوگو چپ">
-  </header>
+    <header>
+        <img src="logo-right.png" alt="لوگوی راست" class="logo right">
+        <h1>امارت اسلامی افغانستان<br>وزارت امور داخله<br>معینیت ارشد امور امنیتی<br>ریاست عمومی پولیس ترافیک</h1>
+        <img src="logo-left.png" alt="لوگوی چپ" class="logo left">
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <nav id="navbar" class="hidden">
+            <ul>
+                <li><a href="#">خانه</a></li>
+                <li><a href="#">اخبار</a></li>
+                <li><a href="#">خدمات ما</a></li>
+                <li><a href="#">اسناد و قوانین</a></li>
+                <li><a href="#">تماس با ما</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <nav>
-    <a href="index.html">صفحه اصلی</a>
-    <a href="akhbar.html">اخبار</a>
-    <a href="khadamat.html">خدمات ما</a>
-    <a href="tamass.html">تماس با ما</a>
-    <a href="qawanin.html">اسناد و قوانین</a>
-  </nav>
+    <main>
+        <section>
+            <h2>به وب‌سایت رسمی ریاست عمومی پولیس ترافیک خوش آمدید</h2>
+            <p>اینجا اطلاعات مربوط به قوانین ترافیکی، خدمات، اطلاعیه‌ها و اخبار رسمی قابل دسترسی است.</p>
+        </section>
+    </main>
 
-  <main>
-    <h2>به وب‌سایت ریاست عمومی پولیس ترافیک خوش آمدید</h2>
-  </main>
+    <footer>
+        <p>© 2025 ریاست عمومی پولیس ترافیک - تمامی حقوق محفوظ است</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('navbar');
+            nav.classList.toggle('hidden');
+        }
+    </script>
 </body>
 </html>
